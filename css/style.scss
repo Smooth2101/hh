@@ -1,0 +1,172 @@
+$blue: #0078DC;
+$grey: #C4C4C4;
+$w100: 100%;
+$m25: 25px;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 960px;
+	width: $w100;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.blue {
+	width: $w100;
+	height: 80px;
+	background: $blue;
+	margin-bottom: 23px;
+}
+.blog {
+	display: flex;
+	margin-bottom: 25px;
+	justify-content: space-between;
+
+	&_3 {
+		width: 180px;
+		height: 319px;
+		background: $grey;
+	}
+}
+.block {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+
+	&_1 {
+		background: $grey;
+		width: 375px;
+		height: 516px;
+		border: 1px solid #000;
+	}
+
+	&_2 {
+		width: 180px;
+		height: 516px;
+		background: $grey;
+		border: 1px solid #000;
+	}
+
+	&_3 {
+		width: 180px;
+		height: 516px;
+		background: $grey;
+		border: 1px solid #000;
+	}
+
+	&_4 {
+		width: 180px;
+		height: 516px;
+		background: $grey;
+		border: 1px solid #000;
+	}
+
+	&__text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+.text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+}
+@media(max-width: 768px) {
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 20px 0;
+
+		.logo {
+			margin-top: 0px;
+			margin-left: 0;
+		}
+
+		.blue {
+			margin-top: 20px;
+			height: 42px;
+			width: 42px;
+		}
+	}
+	.blog {
+		justify-content: center;
+
+		.blog_2 {
+			display: none;
+		}
+	}
+	.block {
+		flex-direction: column;
+		width: 90%;
+		margin: 0 auto;
+
+		.block_1 {
+			width: $w100;
+			height: 309px;
+		}
+		.block_2 {
+			width: $w100;
+			margin-top: $m25;
+			height: 182px;
+		}
+
+		.block_3 {
+			width: $w100;
+			margin-top: $m25;
+			height: 182px;
+		}
+
+		.block_4 {
+			width: $w100;
+			margin-top: $m25;
+			height: 182px;
+		}
+	}
+}
+@media(max-width: 414px) {
+
+	.logo_svg {
+		width: 70px;
+		height: 42px;
+	}
+	.blue {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.blog {
+		flex-direction: column;
+
+		.blog_3 {
+			width: 95%;
+			margin: 25px auto 0;
+		}
+	}
+	.block {
+		width: 95%;
+
+		.block_1 {
+			height: 519px;
+		}
+		.block_2 {
+			height: 45px;
+		}
+		.block_3 {
+			height: 45px;
+		}
+		.block_4 {
+			height: 193px;
+		}
+	}	
+}
